@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | Safiri Sawa Transport</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="flag"></div>
+
+<div class="wrap">
+  <header>
+    <a class="logo" href="index.html"><span>SAFIRI</span> SAWA</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="fares.html">Fares</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" aria-current="page">Booking</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-intro">
+      <h1>Book your trip</h1>
+      <p>
+        Complete the form below. Your booking request will open
+        in WhatsApp for you to review and send.
+      </p>
+    </div>
+
+    <section class="calc-layout">
+      <form id="bookingForm">
+
+        <label for="bookingService">Choose service</label>
+        <select id="bookingService" required>
+          <option value="Boda boda">Boda boda</option>
+          <option value="Matatu (fixed route)">Matatu (fixed route)</option>
+          <option value="Matatu (group hire)">Matatu (group hire)</option>
+          <option value="Parcel delivery">Parcel delivery</option>
+        </select>
+
+        <label for="customerName">Your name</label>
+        <input
+          id="customerName"
+          type="text"
+          required
+          placeholder="Enter your name"
+        >
+
+        <label for="bookingPhone">Your phone number</label>
+        <input
+          id="bookingPhone"
+          type="tel"
+          required
+          placeholder="e.g. 07XX XXX XXX"
+        >
+
+        <label for="bookingPickup">Pick-up point</label>
+        <input
+          id="bookingPickup"
+          type="text"
+          required
+          placeholder="Where should we pick you up?"
+        >
+
+        <label for="bookingDestination">Destination</label>
+        <input
+          id="bookingDestination"
+          type="text"
+          required
+          placeholder="Where are you going?"
+        >
+
+        <label for="bookingPassengers">Number of passengers</label>
+        <input
+          id="bookingPassengers"
+          type="number"
+          min="1"
+          max="14"
+          value="1"
+          required
+        >
+
+        <label for="bookingDate">Preferred date and time</label>
+        <input
+          id="bookingDate"
+          type="datetime-local"
+          required
+        >
+
+        <label for="bookingNotes">Additional details (optional)</label>
+        <textarea
+          id="bookingNotes"
+          placeholder="Luggage, parcel details or other requests"
+        ></textarea>
+
+        <p style="margin-top:22px">
+          <button class="btn" type="submit">
+            Send booking on WhatsApp
+          </button>
+        </p>
+
+      </form>
+
+      <div class="result">
+        <h2>Need help?</h2>
+        <p>Contact us if you need assistance with your booking.</p>
+
+        <p>
+          <strong>Phone:</strong><br>
+          <a href="tel:0115894399">0115894399</a>
+        </p>
+
+        <p>
+          <strong>Email:</strong><br>
+          <a href="mailto:safarisawa023@gmail.com">
+            safarisawa023@gmail.com
+          </a>
+        </p>
+
+        <p>Open daily, 5:00 am to 11:00 pm.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <h3>Safiri Sawa Transport</h3>
+      <p>Boda boda and matatu services</p>
+    </div>
+    <div>
+      <h3>Reach us</h3>
+      <p>Phone: <a href="tel:0115894399">0115894399</a></p>
+      <p>Email: <a href="mailto:safarisawa023@gmail.com">safarisawa023@gmail.com</a></p>
+    </div>
+    <div>
+      <h3>Other pages</h3>
+      <p><a href="services.html">Services</a></p>
+      <p><a href="fares.html">Fares</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

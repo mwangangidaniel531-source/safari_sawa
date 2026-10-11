@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fares | Safiri Sawa Transport</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="flag"></div>
+
+<div class="wrap">
+  <header>
+    <a class="logo" href="index.html"><span>SAFIRI</span> SAWA</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="fares.html" aria-current="page">Fares</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html">Booking</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-intro">
+      <h1>Get your fare</h1>
+      <p>Calculate an estimated fare before booking your trip.</p>
+    </div>
+
+    <div class="notice">
+      <strong>Note:</strong> These are sample rates from your original website.
+      Confirm and replace them with your actual fares before launch.
+    </div>
+
+    <section class="calc-layout">
+      <form id="fareForm">
+        <label for="serviceType">Service</label>
+        <select id="serviceType" name="serviceType">
+          <option value="boda">Boda boda</option>
+          <option value="matatu">Matatu (fixed route)</option>
+        </select>
+
+        <div id="distanceField">
+          <label for="distance">Distance in kilometres</label>
+          <input id="distance" type="number" min="1" max="60" value="5">
+        </div>
+
+        <div id="routeField" hidden>
+          <label for="route">Route</label>
+          <select id="route">
+            <option value="50">Town Centre to Market — KES 50</option>
+            <option value="100">Town Centre to Hospital — KES 100</option>
+            <option value="150">Town Centre to Airstrip — KES 150</option>
+            <option value="300">Town to Next Town — KES 300</option>
+          </select>
+        </div>
+
+        <label for="passengers">Passengers</label>
+        <input id="passengers" type="number" min="1" max="14" value="1">
+
+        <label for="pickup">Pick-up point</label>
+        <input id="pickup" type="text" placeholder="e.g. Main stage">
+
+        <label for="destination">Destination</label>
+        <input id="destination" type="text" placeholder="Where are you going?">
+
+        <p style="margin-top:22px">
+          <button class="btn" type="button" id="recalculate">
+            Calculate fare
+          </button>
+        </p>
+      </form>
+
+      <div class="result" aria-live="polite">
+        <div>Estimated fare</div>
+        <div class="fare" id="fareOutput">KES 170</div>
+        <p id="fareNote">Estimate only. Confirm the final fare before travel.</p>
+        <a class="btn" id="fareBook" href="booking.html">
+          Continue to booking
+        </a>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <h3>Safiri Sawa Transport</h3>
+      <p>Boda boda and matatu services</p>
+      <p>Open daily, 5:00 am to 11:00 pm</p>
+    </div>
+    <div>
+      <h3>Reach us</h3>
+      <p>Phone: <a href="tel:0115894399">0115894399</a></p>
+      <p>Email: <a href="mailto:safarisawa023@gmail.com">safarisawa023@gmail.com</a></p>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <p><a href="services.html">Our services</a></p>
+      <p><a href="booking.html">Book a trip</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
